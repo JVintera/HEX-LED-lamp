@@ -1,6 +1,8 @@
 # HEX-LED-lamp
 <h1>LED lampička na tři způsoby</h1>
 
+<p>Model krabičky vychází z https://www.thingiverse.com/thing:2503641</p>
+
 <h2>LED lampička</h2>
 <p>Původní verze využívá LED modul ze žárovky. Do budoucna bude možná nahrazen supersvítivými LED, aby bylo možné použít lampičku i jako dětskou promítačku.</p>
 
