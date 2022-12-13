@@ -9,6 +9,11 @@
 
 <h4>Soupis použitých komponent</h4>
 <ul>
+  <li>Spínač - https://ecom.cz/eshop/detail/56333-VP-R13-112B-BRBT2</li>
+  <li>Trumr - https://ecom.cz/eshop/detail/48315-MCA14-NHC0-10K-KA</li>
+  <li>Hřídelka k trimru - https://ecom.cz/eshop/detail/3047-HRIDEL-CA-14073-1</li>
+  <li>Napájecí konektor - https://www.laskakit.cz/napajeci-konektor-dc-022-5-5-2-1mm-do-panelu/</li>
+  <li></li>
   <li></li>
   <li></li>
 </ul>
