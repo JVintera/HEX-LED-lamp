@@ -1,4 +1,4 @@
-# HEX-LED-lamp
+a# HEX-LED-lamp
 <h1>LED lampička na tři způsoby</h1>
 
 <h2>LED lampička</h2>
@@ -24,13 +24,13 @@
 <h3>Fotodokumentace</h3>
 <img src="LEDlamp/IMG_20221219_151457395.jpg" alt="LED lampička" width="600">
 <img src="LEDlamp/IMG_20221219_151400077.jpg" alt="Lampička s LED modulem ze žárovky" width="600">
-<img src="LEDlamp/IMG_20221219_151400077.jpg" alt="LED lampička se supersvítivými diodami" width="600">
+<img src="LEDlamp/IMG_20221004_150305988.jpg" alt="LED lampička se supersvítivými diodami" width="600">
 
 <h3>Problémy a řešení</h3>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Robírání LED žárovek: Žárovka ve které odešel zdroj může mít skleněnou, nebo plastovou baňku. U skleněné lze nahřát lepidlo v místě spoje baňky a těla (přp. chladiče) žárovky. Lze fénem nebo horkovzdušnou pistolí. Předem počítejte s vysokými teplotami, takže např. kožené dílenské rukavice a místo, kam je možné odkládat horkou žárovku si připravte předem. Poté, co povolí lepidlo, baňku lze tahem pomalu odlepovat. Nejde to zcela zlehka, ale ani moc ztuha. Buďte též opatrní, abyste skleněnou baňku nerozmáčkly. Plastová baňka se při vyšších teplotách deformuje, ale lze ji snadno uříznout např. pilkou na železo, nebo prostě vypáčit šroubovákem a vylámat kleštěmi.</p>
+<p>LED modul ze žárovky: Moduly jsou na různá napětí. Někdy lze odvodit napětí od typu a řazení LED. Pokud ale máte regulovatelný zdroj DC napětí a ampérmetr, nastavte nulové napětí, připojte žárovku a s ní do série ampérmetr. Pomalu zvyšujte napětí a sledujte (případně si i zapisujte) procházející proud. Ve chvíli, kdy bude LED svítit jasným světlem narazíte na oblast, kde se náhle při malém zvýšení napětí prudce zvýší proud. Provozní napětí bývá v oblasti tohoto zlomu (viz <a href="https://cs.wikipedia.org/wiki/LED">VA charakteristika LED, propustný směr</a>). Pokud chcete dlouhou životnost LED, snižte napětí těsně před tento zlom. Pokud chcete vyšší svítivost na úkor zkrácení životnosti, provozujte LED těsně za tímto zlomem.</p>
+<p>Volba zdoje: Pokud použijete spínaný zdroj konstantního napětí se stítkovým napětím např. 5 V DC (běžné nabíječky), můžete se setkat s tím, že zdroj má na prázdno (bez zatížení) vírazně vyšší napětí. Abyste ochránili LED, stačí přidat do série tzv. <a href="https://cs.wikipedia.org/wiki/P%C5%99ed%C5%99adn%C3%ADk">předřadný rezistor</a>. Hodnotu lze <a href="https://youtu.be/mbZndNbmDEs">vypočítat</a>. Pokud použijete napětí na prázdno, LED budou svítit nepatrně menším jasem. Proto je možné zdroj zatížit, např. potenciometrem na kterém nastavíme takovou hodnotu, aby jím protékal zhruba stejný proud, jako požadujeme pro LED, a změříme na něm napětí. Lze samozřejmě postupovat i jinak. Např. můžete koupit <a href="https://youtu.be/iGyiqOaCaCM">zdroj proudu</a>.</p>
+<p>Připevnění LED: Jelikož i LED vyzařují kromě viditelného spektra i infračervené (ohřívají se), přilepení LED modulu tavnou pistolí není použitelné. Po delším svícení se lepidlo rozehřálo. Ze stejného důvodu je i problematické přímé přišroubování k vytištěné plastové destičce (viz foto výše). Řešením jsou např. nízké distanční sloupky. Pokud jsou ale kovové, je třeba zajistit, aby na LED modulu nezkratovali vodivé cesty.</p>
 
 <hr>
 
