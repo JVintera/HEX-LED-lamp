@@ -33,9 +33,63 @@ a# HEX-LED-lamp
 <p>Připevnění LED: Jelikož i LED vyzařují kromě viditelného spektra i infračervené (ohřívají se), přilepení LED modulu tavnou pistolí není použitelné. Po delším svícení se lepidlo rozehřálo. Ze stejného důvodu je i problematické přímé přišroubování k vytištěné plastové destičce (viz foto výše). Řešením jsou např. nízké distanční sloupky. Pokud jsou ale kovové, je třeba zajistit, aby na LED modulu nezkratovali vodivé cesty.</p>
 
 <hr>
+<!-- ********************************************************************* -->
 
 <h2>WI-FI lampička</h2>
 <p>Lampička ovládaná přes wi-fi. Přes tlačítko režimy zapnout, vypnout. A přes wi-fi i stmívání.</p>
 
+
+
+
+
+
+<hr>
+<!-- ********************************************************************* -->
+
 <h2>RGB lampička</h2>
 <p>Lampička s LED WS2812B ovládaná přes wi-fi. Tlačítkem přepínání přednastavených režimů. Přes wi-fi případně i další funkce. </p>
+
+<h3>Schéma zapojení</h3>
+<img src="RGBlamp/schema.PNG" alt="Chema zapojeni" width="600">
+
+<h3>Programy</h3>
+<p><a href="RGBlamp/RGBlamp_v1/RGBlamp_v1.ino">RGBlamp_v1.ino</a> - zapnutí a vypnutí LED jedním tlačítkem (Tlačítko i LED na M5ATOM)</p>
+<p><a href="RGBlamp/RGBlamp_v2/RGBlamp_v2.ino">RGBlamp_v2.ino</a> - stmívání LED jedním tlačítkem (Tlačítko i LED na M5ATOM)</p>
+<p><a href="RGBlamp/RGBlamp_v3/RGBlamp_v3.ino">RGBlamp_v3.ino</a> - zapínání a vypínání externích LED WB2812B tlačítkem na pinu G25, použit efekt Rainbow</p>
+<p><a href="RGBlamp/RGBlamp_v4/RGBlamp_v4.ino">RGBlamp_v4.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Blynk, použit efekt Rainbow</p>
+
+
+
+<h3>Soupis použitých komponent</h3>
+<ul>
+  <li>Řídící jednotka - <a href="https://rpishop.cz/waveshare/4445-waveshare-rp2040-zero-pico-like-mcu-deska-zalozena-na-raspberry-pi-mcu-rp2040-mini-verze-bez-osazenych-headeru.html">Waveshare RP2040-Zero, bez headerů</a></li>
+  <li>RGB LED - <a href="https://www.laskakit.cz/100x-inteligentni-rgb-led-neopixel--ws2812b--10x10--5050--5v/">100x inteligentní RGB LED NeoPixel, WS2812B, 10x10, 5050, 5V</a></li>
+  <li>Propojovací vodiče - z UTP kabelu</li>
+  <li>Programovací a napájecí kabel - programovací kabel USB-A na USB-C</li>
+  <li>Zdroj napájení - nabíječna na telefon 5V 2A</li>
+</ul>
+
+<h3>3D modely tištěných dílů</h3>
+<p>3D modely pro tisk <a href="https://www.printables.com/cs/model/289219-hexagon-led-lamp">Šestihranná LED žárovka</a></p>
+
+<h3>Fotodokumentace</h3>
+<img src="img/IMG_20221212_104202420_kopie.jpg" alt="Davidova hvězda" width="400">
+<img src="img/IMG_20221212_104210208.jpg" alt="Vánoční výzdoba" width="400">
+<img src="img/IMG_20230123_161248088.jpg" alt="Vánoční výzdoba" width="400">
+<img src="img/IMG_20230124_093709991.jpg" alt="Vánoční výzdoba" width="400">
+
+<h3>Problémy a řešení</h3>
+<p>Připevnění LED do vytištěné desky s otvory: pomocí kobercové pásky dostatečně nedrží. Lépe funguje zakápnout každou LED tavnou pistolí. Pozor, nezalít úplně, aby se LED dobře chladila, případně aby šla i snadno vyměnit.</p>
+
+<h3>Co dál?</h3>
+<p>Předělat na bateriové napájení.</p>
+<p>Naprogramovat další režimy blikání.</p>
+<p>Přidat tlačítko pro přepínání režimů blikání.</p>
+
+<h3>Literatura</h3>
+<ul>
+  <li><a href="https://www.waveshare.com/wiki/RP2040-Zero ">RP2040</a></li>
+  <li><a href="https://youtu.be/WpaXMcmwyeU">Raspberry Pi Pico Tutorial : NeoPixels / WS2812B LED's</a></li>
+  <li><a href="https://github.com/blaz-r/pi_pico_neopixel/blob/main/neopixel.py">Knihovna neopixel.py</a></li>
+  <li><a href="https://github.com/Guitarman9119/Raspberry-Pi-Pico-/blob/main/Neopixel/Example1.py">Příklad použití knihovny neopixel.py</a></li>
+</ul>
