@@ -1,4 +1,4 @@
-a# HEX-LED-lamp
+# HEX-LED-lamp
 <h1>LED lampička na tři způsoby</h1>
 
 <h2>LED lampička</h2>
@@ -49,8 +49,9 @@ a# HEX-LED-lamp
 <h2>RGB lampička</h2>
 <p>Lampička s LED WS2812B ovládaná přes wi-fi. Tlačítkem přepínání přednastavených režimů. Přes wi-fi případně i další funkce. </p>
 
+<<<<<<< HEAD
 <h3>Schéma zapojení</h3>
-<img src="RGBlamp/schema.PNG" alt="Chema zapojeni" width="600">
+<img src="RGBlamp/Schema/schema.PNG" alt="Chema zapojeni" width="600">
 
 <h3>Programy</h3>
 <p><a href="RGBlamp/RGBlamp_v1/RGBlamp_v1.ino">RGBlamp_v1.ino</a> - zapnutí a vypnutí LED jedním tlačítkem (Tlačítko i LED na M5ATOM)</p>
@@ -93,3 +94,13 @@ a# HEX-LED-lamp
   <li><a href="https://github.com/blaz-r/pi_pico_neopixel/blob/main/neopixel.py">Knihovna neopixel.py</a></li>
   <li><a href="https://github.com/Guitarman9119/Raspberry-Pi-Pico-/blob/main/Neopixel/Example1.py">Příklad použití knihovny neopixel.py</a></li>
 </ul>
+=======
+
+
+
+<h3>Literatura</h3>
+<ul>
+  <li></li>
+</ul>
+  
+>>>>>>> ca61c19f62427b5512a40e771c941209f998557e
