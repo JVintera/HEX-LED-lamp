@@ -49,7 +49,6 @@
 <h2>RGB lampička</h2>
 <p>Lampička s LED WS2812B ovládaná přes wi-fi. Tlačítkem přepínání přednastavených režimů. Přes wi-fi případně i další funkce. </p>
 
-<<<<<<< HEAD
 <h3>Schéma zapojení</h3>
 <img src="RGBlamp/Schema/schema.PNG" alt="Chema zapojeni" width="600">
 
@@ -96,11 +95,3 @@
 </ul>
 =======
 
-
-
-<h3>Literatura</h3>
-<ul>
-  <li></li>
-</ul>
-  
->>>>>>> ca61c19f62427b5512a40e771c941209f998557e
