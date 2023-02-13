@@ -3,28 +3,25 @@
 
 <h2>LED lampička</h2>
 <p>Původní verze využívá LED modul ze žárovky. Následně vytvořena varianta se supersvítivými LED, aby bylo možné použít lampičku i jako dětskou promítačku.</p>
+<img src="LEDlamp/IMG_20221219_151400077.jpg" alt="Lampička s LED modulem ze žárovky" width="400">
+<img src="LEDlamp/IMG_20221219_151457395.jpg" alt="LED lampička" width="400">
 
 <h3>Schéma zapojení</h3>
 <img src="LEDlamp/schema.png" alt="Chema zapojeni" width="600">
 
 <h3>Soupis použitých komponent</h3>
 <ul>
-  <li>Spínač - <a href="https://ecom.cz/eshop/detail/56333-VP-R13-112B-BRBT2">VP-R13-112B BRBT2</a></li>
-  <li>Trimr - <a href="https://ecom.cz/eshop/detail/48315-MCA14-NHC0-10K-KA">MCA14 NHC0 10K KA</a></li>
+  <li>SW1 - spínač - <a href="https://ecom.cz/eshop/detail/56333-VP-R13-112B-BRBT2">VP-R13-112B BRBT2</a></li>
+  <li>RV1 - trimr - <a href="https://ecom.cz/eshop/detail/48315-MCA14-NHC0-10K-KA">MCA14 NHC0 10K KA</a></li>
   <li>Hřídelka k trimru - <a href="https://ecom.cz/eshop/detail/3047-HRIDEL-CA-14073-1">HRIDEL CA-14073-1</a></li>
-  <li>Napájecí konektor - <a href="https://www.laskakit.cz/napajeci-konektor-dc-022-5-5-2-1mm-do-panelu/">Napájecí konektor DC-022 5,5/2,1mm - do panelu</a></li>
-  <li>LED - podle potřeby: LED modul ze žárovky, nebo např. <a href="https://ecom.cz/eshop/detail/29727-LED-FYL-5014UWC1C">LED-FYL-5014UWC1C</a></li>
+  <li>J1 - napájecí konektor - <a href="https://www.laskakit.cz/napajeci-konektor-dc-022-5-5-2-1mm-do-panelu/">Napájecí konektor DC-022 5,5/2,1mm - do panelu</a></li>
+  <li>D1 - LED - podle potřeby: LED modul ze žárovky, nebo např. <a href="https://ecom.cz/eshop/detail/29727-LED-FYL-5014UWC1C">LED-FYL-5014UWC1C</a></li>
   <li>Zdroj - podle použitých LED, často je možné použít nabíječku na telefon</li>
 </ul>
 
-<h3>3D modely tištěných dílů</h3>
+<h3>3D modely tištěných dílů a fotografie</h3>
 <p>Model krabičky vychází z <a href="https://www.thingiverse.com/thing:2503641">Hexagonal LED Lamp with USB chargeable 18650 battery</a></p>
 <p>3D modely pro tisk <a href="https://www.printables.com/cs/model/289219-hexagon-led-lamp">Hexagon LED lamp</a></p>
-
-<h3>Fotodokumentace</h3>
-<img src="LEDlamp/IMG_20221219_151457395.jpg" alt="LED lampička" width="600">
-<img src="LEDlamp/IMG_20221219_151400077.jpg" alt="Lampička s LED modulem ze žárovky" width="600">
-<img src="LEDlamp/IMG_20221004_150305988.jpg" alt="LED lampička se supersvítivými diodami" width="600">
 
 <h3>Problémy a řešení</h3>
 <p>Robírání LED žárovek: Žárovka ve které odešel zdroj může mít skleněnou, nebo plastovou baňku. U skleněné lze nahřát lepidlo v místě spoje baňky a těla (přp. chladiče) žárovky. Lze fénem nebo horkovzdušnou pistolí. Předem počítejte s vysokými teplotami, takže např. kožené dílenské rukavice a místo, kam je možné odkládat horkou žárovku si připravte předem. Poté, co povolí lepidlo, baňku lze tahem pomalu odlepovat. Nejde to zcela zlehka, ale ani moc ztuha. Buďte též opatrní, abyste skleněnou baňku nerozmáčkly. Plastová baňka se při vyšších teplotách deformuje, ale lze ji snadno uříznout např. pilkou na železo, nebo prostě vypáčit šroubovákem a vylámat kleštěmi.</p>
@@ -48,6 +45,7 @@
 
 <h2>RGB lampička</h2>
 <p>Lampička s LED WS2812B ovládaná přes wi-fi. Tlačítkem přepínání přednastavených režimů. Přes wi-fi případně i další funkce. </p>
+<img src="RGBlamp/IMG_20230213_023912020.jpg" alt="Vnitřek RGB lampičky" width="400">
 
 <h3>Schéma zapojení</h3>
 <img src="RGBlamp/Schema/schema.PNG" alt="Chema zapojeni" width="600">
@@ -57,41 +55,36 @@
 <p><a href="RGBlamp/RGBlamp_v2/RGBlamp_v2.ino">RGBlamp_v2.ino</a> - stmívání LED jedním tlačítkem (Tlačítko i LED na M5ATOM)</p>
 <p><a href="RGBlamp/RGBlamp_v3/RGBlamp_v3.ino">RGBlamp_v3.ino</a> - zapínání a vypínání externích LED WB2812B tlačítkem na pinu G25, použit efekt Rainbow</p>
 <p><a href="RGBlamp/RGBlamp_v4/RGBlamp_v4.ino">RGBlamp_v4.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Blynk, použit efekt Rainbow</p>
-
-
+<!-- Dopsat jak ma Blynk IoT -->
 
 <h3>Soupis použitých komponent</h3>
 <ul>
-  <li>Řídící jednotka - <a href="https://rpishop.cz/waveshare/4445-waveshare-rp2040-zero-pico-like-mcu-deska-zalozena-na-raspberry-pi-mcu-rp2040-mini-verze-bez-osazenych-headeru.html">Waveshare RP2040-Zero, bez headerů</a></li>
-  <li>RGB LED - <a href="https://www.laskakit.cz/100x-inteligentni-rgb-led-neopixel--ws2812b--10x10--5050--5v/">100x inteligentní RGB LED NeoPixel, WS2812B, 10x10, 5050, 5V</a></li>
+  <li>U1 - řídící jednotka - <a href="https://rpishop.cz/kontrolery/2759-m5stack-atom-lite-esp32-vyvojovy-kit.html">M5Stack ATOM Lite ESP32</a></li>
+  <li>D1 až D24 - RGB LED - <a href="https://www.laskakit.cz/24x-inteligentni-rgb-led-neopixel-kruh-65--ws2812b--5050--5v/">Kruh 24x RGB LED NeoPixel Ø65, WS2812B, 5050, 5V</a></li>
+  <li>U2 - ochrana Li-ion baterie - <a href="https://www.laskakit.cz/ochrana-li-ion-baterie-1s-3a/">Ochrana li-ion baterie 1S 3A</a></li>
+  <li>U3 - nabíjecí modul - <a href="https://www.laskakit.cz/nabijecka-boost-pro-usb-powerbank-5v--usb-c/">Nabíječka + boost pro USB Powerbank 5V, USB-C</a></li>
+  <li>SW1 - tlačítko - <a href="https://ecom.cz/eshop/detail/68498-T-0660HAC-160G">Tlačítko spínací do PS,12V/50,výška 6mm</a></li>
+  <li>SW2 - spínač - <a href="https://ecom.cz/eshop/detail/70765-VP-SS12F15G6">Spínač SS12F15G6-G</a></li>
+  <li>BT1 - li-ion akumulátor - např. <a href="https://www.laskakit.cz/geb-lipol-baterie-801454-580mah-3-7v-jst-ph-2-0/">GeB LiPol Baterie 801454 580mAh 3.7V JST-PH 2.0</a></li>
   <li>Propojovací vodiče - z UTP kabelu</li>
-  <li>Programovací a napájecí kabel - programovací kabel USB-A na USB-C</li>
-  <li>Zdroj napájení - nabíječna na telefon 5V 2A</li>
+  <li>Programovací kabel - programovací kabel USB-A na USB-C</li>
 </ul>
 
-<h3>3D modely tištěných dílů</h3>
-<p>3D modely pro tisk <a href="https://www.printables.com/cs/model/289219-hexagon-led-lamp">Šestihranná LED žárovka</a></p>
-
-<h3>Fotodokumentace</h3>
-<img src="img/IMG_20221212_104202420_kopie.jpg" alt="Davidova hvězda" width="400">
-<img src="img/IMG_20221212_104210208.jpg" alt="Vánoční výzdoba" width="400">
-<img src="img/IMG_20230123_161248088.jpg" alt="Vánoční výzdoba" width="400">
-<img src="img/IMG_20230124_093709991.jpg" alt="Vánoční výzdoba" width="400">
+<h3>3D modely tištěných dílů a fotografie</h3>
+<p>Model krabičky vychází z <a href="https://www.thingiverse.com/thing:2503641">Hexagonal LED Lamp with USB chargeable 18650 battery</a></p>
+<p>3D modely pro tisk <a href="https://www.printables.com/cs/model/289219-hexagon-led-lamp">Hexagon LED lamp</a></p>
 
 <h3>Problémy a řešení</h3>
-<p>Připevnění LED do vytištěné desky s otvory: pomocí kobercové pásky dostatečně nedrží. Lépe funguje zakápnout každou LED tavnou pistolí. Pozor, nezalít úplně, aby se LED dobře chladila, případně aby šla i snadno vyměnit.</p>
+<p>Stav baterie: použitý modul pro nabíjení baterie má signalizaci stavu baterie pomocí čtyř LED, ty ale po smontování lampičky nejsou vidět. Proto byl v místě LED dodatečně vyvrtán otvor.</p>
 
 <h3>Co dál?</h3>
-<p>Předělat na bateriové napájení.</p>
-<p>Naprogramovat další režimy blikání.</p>
-<p>Přidat tlačítko pro přepínání režimů blikání.</p>
+<p>Upravit program tak, aby v případě, že se nenaváže spojení s wi-fi, bylo možné ovládat lampičku alespoň pomocí tlačítka.</p>
+<p>Doprogramovat další režimy svícení a přepínat mezi nimi v aplikaci Blynk IoT. Případně ještě přidat další tlačítko na přepínání těchto režimů.</p>
 
 <h3>Literatura</h3>
 <ul>
-  <li><a href="https://www.waveshare.com/wiki/RP2040-Zero ">RP2040</a></li>
-  <li><a href="https://youtu.be/WpaXMcmwyeU">Raspberry Pi Pico Tutorial : NeoPixels / WS2812B LED's</a></li>
-  <li><a href="https://github.com/blaz-r/pi_pico_neopixel/blob/main/neopixel.py">Knihovna neopixel.py</a></li>
-  <li><a href="https://github.com/Guitarman9119/Raspberry-Pi-Pico-/blob/main/Neopixel/Example1.py">Příklad použití knihovny neopixel.py</a></li>
+  <li><a href="https://docs.m5stack.com/en/core/atom_lite">M5Stack - ATOM Lite</a></li>
+  <!-- Dopsat tutoriál k Blynk IoT, případně další zdroje info -->
 </ul>
-=======
+
 
