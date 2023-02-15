@@ -50,12 +50,18 @@
 <h3>Schéma zapojení</h3>
 <img src="RGBlamp/Schema/schema.PNG" alt="Chema zapojeni" width="600">
 
-<h3>Programy</h3>
+<h3>Programy a IoT cloud</h3>
 <p><a href="RGBlamp/RGBlamp_v1/RGBlamp_v1.ino">RGBlamp_v1.ino</a> - zapnutí a vypnutí LED jedním tlačítkem (Tlačítko i LED na M5ATOM)</p>
 <p><a href="RGBlamp/RGBlamp_v2/RGBlamp_v2.ino">RGBlamp_v2.ino</a> - stmívání LED jedním tlačítkem (Tlačítko i LED na M5ATOM)</p>
 <p><a href="RGBlamp/RGBlamp_v3/RGBlamp_v3.ino">RGBlamp_v3.ino</a> - zapínání a vypínání externích LED WB2812B tlačítkem na pinu G25, použit efekt Rainbow</p>
+<p style="color:red">POZOR! V programech nepoužívejte pravé SSID s heslem pro Wi-fi, případně další citlivé údaje.</p>
 <p><a href="RGBlamp/RGBlamp_v4/RGBlamp_v4.ino">RGBlamp_v4.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Blynk, použit efekt Rainbow</p>
-<!-- Dopsat jak ma Blynk IoT -->
+<p>Šablona (template) v Blynk IoT:</p>
+<img src="RGBlamp/RGBlamp_v4/blynk_tmplate01.PNG" alt="Blynk - template->info" width="400">
+<img src="RGBlamp/RGBlamp_v4/blynk_tmplate02.PNG" alt="Blynk - template->datastreams" width="400">
+<img src="RGBlamp/RGBlamp_v4/blynk_tmplate03.PNG" alt="Blynk - template->automations" width="400">
+<img src="RGBlamp/RGBlamp_v4/blynk_tmplate04.PNG" alt="Blynk - template->web dashboard" width="400">
+<p>Z této šablony bylo vytvořeno zařízení (+ New device). V záložce Device info lze najít vygenerovaný TOKEN, který je nutné zkopírovat do programu.</p>
 
 <h3>Soupis použitých komponent</h3>
 <ul>
@@ -84,7 +90,8 @@
 <h3>Literatura</h3>
 <ul>
   <li><a href="https://docs.m5stack.com/en/core/atom_lite">M5Stack - ATOM Lite</a></li>
-  <!-- Dopsat tutoriál k Blynk IoT, případně další zdroje info -->
+  <li><a href="https://blynk.io/">IoT cloud Blynk</a></li>
+  <li><a href="https://youtu.be/IQyistaqj1U">Oficiální video tutoriál od Blynk</a></li>
 </ul>
 
 
