@@ -56,6 +56,7 @@
 <p><a href="RGBlamp/RGBlamp_v3/RGBlamp_v3.ino">RGBlamp_v3.ino</a> - zapínání a vypínání externích LED WB2812B tlačítkem na pinu G25, použit efekt Rainbow</p>
 <p style="color:red">POZOR! V programech nepoužívejte pravé SSID s heslem pro Wi-fi, případně další citlivé údaje.</p>
 <p><a href="RGBlamp/RGBlamp_v4/RGBlamp_v4.ino">RGBlamp_v4.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Blynk, použit efekt Rainbow</p>
+<p><a href="RGBlamp/RGBlamp_v5/RGBlamp_v5.ino">RGBlamp_v5.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Blynk, použit efekt Rainbow, pokud není wi-fi v dosahu, funguje ovládání tlačítkem</p>
 <p>Šablona (template) v Blynk IoT:</p>
 <img src="RGBlamp/RGBlamp_v4/blynk_tmplate01.PNG" alt="Blynk - template->info" width="400">
 <img src="RGBlamp/RGBlamp_v4/blynk_tmplate02.PNG" alt="Blynk - template->datastreams" width="400">
@@ -84,7 +85,6 @@
 <p>Stav baterie: použitý modul pro nabíjení baterie má signalizaci stavu baterie pomocí čtyř LED, ty ale po smontování lampičky nejsou vidět. Proto byl v místě LED dodatečně vyvrtán otvor.</p>
 
 <h3>Co dál?</h3>
-<p>Upravit program tak, aby v případě, že se nenaváže spojení s wi-fi, bylo možné ovládat lampičku alespoň pomocí tlačítka.</p>
 <p>Doprogramovat další režimy svícení a přepínat mezi nimi v aplikaci Blynk IoT. Případně ještě přidat další tlačítko na přepínání těchto režimů.</p>
 
 <h3>Literatura</h3>
@@ -92,6 +92,8 @@
   <li><a href="https://docs.m5stack.com/en/core/atom_lite">M5Stack - ATOM Lite</a></li>
   <li><a href="https://blynk.io/">IoT cloud Blynk</a></li>
   <li><a href="https://youtu.be/IQyistaqj1U">Oficiální video tutoriál od Blynk</a></li>
+  <li><a href="https://docs.blynk.io/en/getting-started/what-do-i-need-to-blynk">Dokumentace ke knihovně bklynk.h</a></li>
+  <li><a href="https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/">Článek připojení ESP32 pomocí Wi-fi</a></li>
 </ul>
 
 
