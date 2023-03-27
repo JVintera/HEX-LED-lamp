@@ -37,10 +37,8 @@
 char auth[] = BLYNK_AUTH_TOKEN;
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Zima";
-char pass[] = "Ro2uJjej";
-// char ssid[] = "Zima24_guest";
-// char pass[] = "Zimikovi812/";
+char ssid[] = "SSID";
+char pass[] = "hesloWifi";
 char server[] = "blynk.cloud";
 int port = 80;
 BlynkTimer timer; // Creating a timer object
