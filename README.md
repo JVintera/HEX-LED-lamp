@@ -33,7 +33,8 @@
 <!-- ********************************************************************* -->
 
 <h2>WI-FI lampička</h2>
-<p>Lampička ovládaná přes wi-fi. Přes tlačítko režimy zapnout, vypnout. A přes wi-fi i stmívání.</p>
+<p>Lampička ovládaná tlačítkem, nebo přes wi-fi, viz 
+  <a href="WIFIlamp/v2/dokumentace.docx">dokumentace.docx</a></p>
 
 
 
