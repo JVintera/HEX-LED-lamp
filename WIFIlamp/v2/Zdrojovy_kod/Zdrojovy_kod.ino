@@ -1,3 +1,9 @@
+// Jak naprogramovat ESP32 S2F
+// https://youtu.be/Ull2gCKb1Yw?feature=shared
+
+// Projekt podle
+// https://randomnerdtutorials.com/esp32-esp8266-web-server-physical-button/
+
 //knihovny popsány v dokumentaci
 #ifdef ESP32 
   #include <WiFi.h>
@@ -9,8 +15,8 @@
 #include <ESPAsyncWebServer.h>
 
 // parametry k připojení k síti
-const char* ssid = "název sítě";  //název sítě
-const char* password = "heslo k síti";  //heslo k síti
+const char* ssid = "weblamp";  //název sítě
+const char* password = "web*5*lamp";  //heslo k síti
 
 const char* PARAM_INPUT_1 = "state";
 

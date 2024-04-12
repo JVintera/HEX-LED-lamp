@@ -1,6 +1,6 @@
 # HEX-LED-lamp
 <h1>LED lampička na tři způsoby</h1>
-
+ 
 <h2>LED lampička</h2>
 <p>Původní verze využívá LED modul ze žárovky. Následně vytvořena varianta se supersvítivými LED, aby bylo možné použít lampičku i jako dětskou promítačku.</p>
 <img src="LEDlamp/IMG_20221219_151400077.jpg" alt="Lampička s LED modulem ze žárovky" width="400">

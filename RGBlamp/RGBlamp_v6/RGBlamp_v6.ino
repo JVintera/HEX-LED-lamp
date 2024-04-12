@@ -22,6 +22,15 @@
   Příklad pro LED https://examples.blynk.cc/?board=ESP32&shield=ESP32%20WiFi&example=GettingStarted%2FVirtualPinWrite&auth=_l5IbMrtHpyQaAeHqG1wCQXiu--KYDOA&dev=Quickstart%20Device&tmpl=TMPLIXw3EzCx
   Příklady pro wi-fi https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/
 */
+
+//Připojení knihoven
+
+
+
+
+
+
+/*
 #include "M5Atom.h"
 #include "FastLED.h"
 #include <WiFi.h>
@@ -173,3 +182,4 @@ void loop() {
   M5.update();
 }
 
+*/
