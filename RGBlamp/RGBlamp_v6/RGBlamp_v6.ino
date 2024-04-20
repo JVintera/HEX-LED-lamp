@@ -1,22 +1,33 @@
-// Opravit rozsvěcení LED
-// Když stisknu HW tlačítko, změní se stav sw tlačítka bez ohledu na wifi?
+// *** Co dodělat ***
+// Ošetřit rozsvěcení LED když neni wifi
 // Jak si to testuje wifi?
 // Popsat v nápovědě soubor wifiConfig.h
 
-
-
 //***************************************************
-// Externí LED WB2812B přepínané tlačítkem a přes Blynk
-// Ošetřeno: manuální ovládání i když není spojení přes wi-fi
-// Efekt Rainbow
+// Externí LED WB2812B přepínané tlačítkem a přes Arduino cloud
+// Několik světelných efektů
 //***************************************************
 /*Zajímavé odkazy
   Arduino IoT cloud https://youtu.be/rcCxGcRwCVk?feature=shared
       https://docs.arduino.cc/arduino-cloud/guides/overview/
+  Knihovna FastLED https://fastled.io/ 
   Návod https://youtu.be/rcCxGcRwCVk?feature=shared
-
 */
 
+//***************************************************
+// Vytvořte soubor wifiConfig.h
+// a vyplnte v něm následující údaje
+// Device ID a Secret Key vygeneruje Arduino cloud
+
+/* VYPLNTE NAZEV WIFI SITE A HESLO  */
+//#define SECRET_SSID "SSID"
+//#define SECRET_OPTIONAL_PASS "Ro2uJjej"
+/* Device ID and Secret Key from Arduino IoT cloud */
+//#define SECRET_DEVICE_LOGIN_NAME "f1941273-afe8-4ad8-98e8-fd96fc37f906"
+//#define SECRET_DEVICE_KEY "3@tGlYzqWA#vUQM1fHvkjPEib"
+//***************************************************
+
+// Základ programu je vygenerován Arduino cloudem
 
 #include "thingProperties.h"
 
@@ -25,7 +36,7 @@ void setup()
   // Initialize serial and wait for port to open:
   Serial.begin(115200);
   // This delay gives the chance to wait for a Serial Monitor without blocking if none is found
-//  delay(1500);
+  //delay(1500);
 
   // Defined in thingProperties.h
   initProperties();
@@ -42,8 +53,6 @@ void setup()
  */
   setDebugMessageLevel(2);
   ArduinoCloud.printDebugInfo();
-
-  
 }
 
 void loop()
@@ -66,6 +75,7 @@ void loop()
   {
     stateB = 0;
   }
+  // Testování dalších SW tlačítek
   if (stateB && !BTN_SW_RainBow && !BTN_SW_StarrLight && !BTN_SW_PoliceBeacon && !BTN_SW_Beacon)
   {
     // Funkce je popsána v https://fastled.io/docs/3.1/group___colorutils.html
@@ -173,8 +183,10 @@ void loop()
     state = (state + 1) % NUM_LEDS;
   }
 
+  // Zálohování stavu tlačítek
   BTN_last = BTN_cur;
   BTN_SW_last = BTN_SW_cur;
+  
   M5.update();
 }
 

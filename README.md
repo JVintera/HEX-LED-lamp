@@ -64,6 +64,13 @@
 <img src="RGBlamp/RGBlamp_v4/blynk_tmplate03.PNG" alt="Blynk - template->automations" width="400">
 <img src="RGBlamp/RGBlamp_v4/blynk_tmplate04.PNG" alt="Blynk - template->web dashboard" width="400">
 <p>Z této šablony bylo vytvořeno zařízení (+ New device). V záložce Device info lze najít vygenerovaný TOKEN, který je nutné zkopírovat do programu.</p>
+<p><a href="RGBlamp/RGBlamp_v6/RGBlamp_v6.ino">RGBlamp_v5.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Arduino IoT cloud, režimy: rozsvícení barevného světla s nastavitelnou barvou, efekt Rainbow, blikající hvězdičky, policejní majáček a oranžový majáček</p>
+<p>Návod na Arduino IoT cloud viz literatura. Konkrétní nastavení:</p>
+<img src="RGBlamp/RGBlamp_v6/ArduinoIotCloud_01.jpg" alt="Cloud variables" width="400">
+<img src="RGBlamp/RGBlamp_v6/ArduinoIotCloud_02.jpg" alt="Cloud variables - edit variable led" width="400">
+<img src="RGBlamp/RGBlamp_v6/ArduinoIotCloud_03.jpg" alt="Dashboard" width="400">
+<img src="RGBlamp/RGBlamp_v6/ArduinoIotCloud_04.jpg" alt="Dashboard - edit colored light" width="400">
+
 
 <h3>Soupis použitých komponent</h3>
 <ul>
@@ -95,6 +102,9 @@
   <li><a href="https://youtu.be/IQyistaqj1U">Oficiální video tutoriál od Blynk</a></li>
   <li><a href="https://docs.blynk.io/en/getting-started/what-do-i-need-to-blynk">Dokumentace ke knihovně bklynk.h</a></li>
   <li><a href="https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/">Článek připojení ESP32 pomocí Wi-fi</a></li>
+  <li><a href="https://youtu.be/rcCxGcRwCVk?feature=shared">Návod na Arduino IoT cloud</a></li>
+  <li><a href="https://docs.arduino.cc/arduino-cloud/guides/overview/">Dokumentace k Arduino IoT cloud</a></li>
+  <li><a href="https://fastled.io/ /">Dokumentace ke knihovně FastLED pro RGB LED WS2812</a></li>
 </ul>
 
 
