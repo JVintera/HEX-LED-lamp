@@ -64,7 +64,7 @@
 <img src="RGBlamp/RGBlamp_v4/blynk_tmplate03.PNG" alt="Blynk - template->automations" width="400">
 <img src="RGBlamp/RGBlamp_v4/blynk_tmplate04.PNG" alt="Blynk - template->web dashboard" width="400">
 <p>Z této šablony bylo vytvořeno zařízení (+ New device). V záložce Device info lze najít vygenerovaný TOKEN, který je nutné zkopírovat do programu.</p>
-<p><a href="RGBlamp/RGBlamp_v6/RGBlamp_v6.ino">RGBlamp_v5.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Arduino IoT cloud, režimy: rozsvícení barevného světla s nastavitelnou barvou, efekt Rainbow, blikající hvězdičky, policejní majáček a oranžový majáček</p>
+<p><a href="RGBlamp/RGBlamp_v6/RGBlamp_v6.ino">RGBlamp_v6.ino</a> - externí LED WB2812B přepínané tlačítkem a přes Arduino IoT cloud, režimy: rozsvícení barevného světla s nastavitelnou barvou, efekt Rainbow, blikající hvězdičky, policejní majáček a oranžový majáček</p>
 <p>Návod na Arduino IoT cloud viz literatura. Konkrétní nastavení:</p>
 <img src="RGBlamp/RGBlamp_v6/ArduinoIotCloud_01.jpg" alt="Cloud variables" width="400">
 <img src="RGBlamp/RGBlamp_v6/ArduinoIotCloud_02.jpg" alt="Cloud variables - edit variable led" width="400">
