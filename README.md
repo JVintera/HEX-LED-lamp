@@ -37,23 +37,32 @@
   <a href="WIFIlamp/v2/dokumentace.docx">dokumentace.docx</a></p>
 <img src="WIFIlamp/v2/Obrázky/20230511_185616.jpg" alt="WIFI lampička" width="400">
 <img src="WIFIlamp/v2/Obrázky/20230511_185634.jpg" alt="WIFI lampička" width="400">
-<img src="WIFIlamp/v2/Obrázky/vizualizace.png" alt="Vizualizace" width="400">
 
 <h3>Schéma zapojení</h3>
 <img src="WIFIlamp/v2/Obrázky/schema.png" alt="Schema zapojeni" width="400">
 
+<h3>Programy a webová vizualizace</h3>
+<p><a href="WIFIlamp/WIFIlamp_v3/WIFIlamp_v3.ino">WIFIlamp_v3.ino</a> - LED modul ze žárovky, přepínání tlačítkem a přes webovou stránku, která běží na ESP32.</p>
+<img src="WIFIlamp/v2/Obrázky/vizualizace.png" alt="Vizualizace" width="400">
 
+<h3>Soupis použitých komponent</h3>
+<ul>
+  <li>ESP 32 S2 mini - <a href="https://pajenicko.cz/wemos-s2-mini-wifi-esp32-s2">Wemos S2 Mini Wifi ESP32-S2</a></li>
+  <li>Stabilizátor napětí - <a href="https://dratek.cz/arduino/5002-napajeci-modul-nepajiveho-pole-mb102.html?gad_source=1&gclid=CjwKCAjwrvyxBhAbEiwAEg_KgmARxPPTbdkbTrEFBj-IGfTFIHNgUrhUuCyqyO6Xz7toK31kdS3_UhoCJboQAvD_BwE">Napájecí modul nepájivého pole MB102</a></li>
+  <li>Unipolární tranzistor pro spínání LED modulu - <a href="https://www.laskakit.cz/pwm-mosfet-modul-d4184--40vdc-50a/">PWM MOSFET modul D4184, 40VDC 50A</a></li>
+  <li>Tlačítko pro ovládání lampičky</li>
+  <li>LED modul z LED žárovky</li>
+</ul>
 
+<h3>3D modely tištěných dílů a fotografie</h3>
+<p>Model krabičky vychází z <a href="https://www.thingiverse.com/thing:2503641">Hexagonal LED Lamp with USB chargeable 18650 battery</a></p>
+<p>3D modely pro tisk <a href="https://www.printables.com/cs/model/289219-hexagon-led-lamp">Hexagon LED lamp</a></p>
 
+<h3>Problémy a řešení</h3>
+<p>...</p>
 
-
-<p><a href="WIFIlamp/WIFIlamp_v3/WIFIlamp_v3.ino">WIFIlamp_v3.ino</a> - LED modul ze žárovky přepínané tlačítkem a přes Arduino IoT cloud, režimy: rozsvícení barevného světla s nastavitelnou barvou, efekt Rainbow, blikající hvězdičky, policejní majáček a oranžový majáček</p>
-
-
-
-
-
-
+<h3>Co dál?</h3>
+<p>...</p>
 
 <h3>Literatura</h3>
 <ul>
