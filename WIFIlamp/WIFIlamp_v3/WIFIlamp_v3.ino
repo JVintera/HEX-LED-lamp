@@ -13,10 +13,14 @@
 
 /* VYPLNTE NAZEV WIFI SITE A HESLO  */
 // #define SECRET_SSID "SSID"
-// #define SECRET_OPTIONAL_PASS "Ro2uJjej"
-/* Device ID and Secret Key from Arduino IoT cloud */
-// #define SECRET_DEVICE_LOGIN_NAME "f1941273-afe8-4ad8-98e8-fd96fc37f906"
-// #define SECRET_DEVICE_KEY "3@tGlYzqWA#vUQM1fHvkjPEib"
+// #define SECRET_OPTIONAL_PASS "password"
+//
+/* Nastavení sítě */
+// IPAddress local_IP(192, 168, 30, 30);
+// IPAddress gateway(192, 168, 1, 1);
+// IPAddress subnet(255, 255, 255, 0);
+// //IPAddress primaryDNS(8, 8, 8, 8);   // optional
+// //IPAddress secondaryDNS(8, 8, 4, 4); // optional
 //***************************************************
 
 //knihovny
