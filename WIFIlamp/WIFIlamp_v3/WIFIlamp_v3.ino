@@ -1,8 +1,3 @@
-// Zjistit, jak se určí IP adresa
-// Okomentovat a pochopit program
-
-
-
 // Desku připojíte jako Deneyap Mini (možná i jiná deska)
 // Aby se dala programovat, je třeba držet boot a resetovat čip
 // Jak naprogramovat ESP32 S2F
@@ -48,9 +43,7 @@ int lastButtonState = LOW;  //pomocná porměnná pro fungování
 unsigned long lastDebounceTime = 0;
 unsigned long debounceDelay = 50;
 
-
 AsyncWebServer server(80);  //zavedení serveru na port 80
-
 
 //zde začíná část HTML programu pro webové rozhraní
 
@@ -107,6 +100,7 @@ setInterval(function ( ) {
 </html>
 )rawliteral";
 
+// Funkce pro nahrazení placeholderu v HTML kódu - změní vzhled checkboxu
 // Replaces placeholder with button section in your web page
 String processor(const String &var) {
   //Serial.println(var);
@@ -119,6 +113,7 @@ String processor(const String &var) {
   return String();
 }
 
+//Nastavení stavu checkboxu
 String outputState() {
   if (digitalRead(output)) {
     return "checked";
@@ -137,6 +132,14 @@ void setup() {
 
   byte countConnect = 0;
   Serial.println("Connecting to WiFi");
+  
+  //Nastavení pevné IP adresy
+  //if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS))
+  if (!WiFi.config(local_IP, gateway, subnet))
+  {
+    Serial.println("STA Failed to configure");
+  }
+  
   WiFi.begin(ssid, password);  //zahájení wifi komunikace
   while (WiFi.status() != WL_CONNECTED && countConnect < 10)
   {
@@ -145,12 +148,14 @@ void setup() {
     countConnect++;
   }
 
-  Serial.println(WiFi.localIP());
+  Serial.println(WiFi.localIP()); //vypsání IP adresy
 
+// Nastavení serveru
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
     request->send_P(200, "text/html", index_html, processor);
   });
 
+// Nastavení serveru pro ovládání LED přes web
   server.on("/update", HTTP_GET, [](AsyncWebServerRequest *request) {
     String inputMessage;
     String inputParam;
@@ -167,10 +172,12 @@ void setup() {
     request->send(200, "text/plain", "OK");
   });
 
+// Nastavení serveru pro získání stavu LED
   server.on("/state", HTTP_GET, [](AsyncWebServerRequest *request) {
     request->send(200, "text/plain", String(digitalRead(output)).c_str());
   });
 
+  // Spuštění serveru
   server.begin();
 }
 

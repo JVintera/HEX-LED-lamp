@@ -33,13 +33,32 @@
 <!-- ********************************************************************* -->
 
 <h2>WI-FI lampička</h2>
-<p>Lampička ovládaná tlačítkem, nebo přes wi-fi, viz 
+<p>Lampička ovládaná tlačítkem, nebo přes wi-fi. Opět použit LED modul ze žárovky. První verze od J. Lelek, viz
   <a href="WIFIlamp/v2/dokumentace.docx">dokumentace.docx</a></p>
+<img src="WIFIlamp/v2/Obrázky/20230511_185616.jpg" alt="WIFI lampička" width="400">
+<img src="WIFIlamp/v2/Obrázky/20230511_185634.jpg" alt="WIFI lampička" width="400">
+<img src="WIFIlamp/v2/Obrázky/vizualizace.png" alt="Vizualizace" width="400">
+
+<h3>Schéma zapojení</h3>
+<img src="WIFIlamp/v2/Obrázky/schema.png" alt="Schema zapojeni" width="400">
 
 
 
 
 
+
+<p><a href="WIFIlamp/WIFIlamp_v3/WIFIlamp_v3.ino">WIFIlamp_v3.ino</a> - LED modul ze žárovky přepínané tlačítkem a přes Arduino IoT cloud, režimy: rozsvícení barevného světla s nastavitelnou barvou, efekt Rainbow, blikající hvězdičky, policejní majáček a oranžový majáček</p>
+
+
+
+
+
+
+
+<h3>Literatura</h3>
+<ul>
+  <li><a href="https://randomnerdtutorials.com/esp32-esp8266-web-server-physical-button/">SP32/ESP8266: Control Outputs with Web Server and a Physical Button Simultaneously</a></li>
+</ul>
 
 <hr>
 <!-- ********************************************************************* -->
